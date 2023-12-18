@@ -29,5 +29,10 @@ class Person:
         self.gender = gender
         self.address = address
 
+    def get_info(self):
+        return self.name, self.age, self.gender, self.address
+
 
 Odam = Person("Barno", 18, "qiz", "Tashkent")
+
+print(*Odam.get_info())
