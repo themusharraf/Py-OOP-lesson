@@ -23,16 +23,18 @@
 
 
 class Person:
-    def __init__(self, name, age, gender, address):
+    def __init__(self, name, year, gender, address):
         self.name = name
-        self.age = age
+        self.year = year
         self.gender = gender
         self.address = address
 
     def get_info(self):
-        return self.name, self.age, self.gender, self.address
+        return self.name, self.year, self.gender, self.address
 
 
-Odam = Person("Barno", 18, "qiz", "Tashkent")
+
+
+Odam = Person("Barno", 2000, "qiz", "Tashkent")
 
 print(*Odam.get_info())
