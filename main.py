@@ -38,16 +38,4 @@
 # print(*odam.get_info())
 
 
-class Car:
-    def __init__(self, name, price, color):
-        self.name = name
-        self.price = price
-        self.color = color
-    # method
-    def get_color(self):
-        return self.color
 
-
-
-obj = Car("BMW", 150_000, "blue")
-print(obj.get_color())
