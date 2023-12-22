@@ -24,4 +24,4 @@ class Student(Shaxs):
 
 
 child = Student(4467788, "admin@", "Jasmina", "Alimova", 18, "AD34567", "Female")
-child.get_passport()
+print(child.get_passport())
