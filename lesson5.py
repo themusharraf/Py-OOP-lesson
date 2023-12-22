@@ -6,7 +6,7 @@ class Point:
         return instance
 
     def get_info(self):
-        ...
+        return self.x, self.y
 
 
 obj = Point(7, 8)
