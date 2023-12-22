@@ -19,3 +19,9 @@ class Student(Shaxs):
         self.student_id = student_id
         self.student_username = student_username
 
+    def get_passport(self):
+        return self.student_username, self.student_username, self.passport
+
+
+child = Student(4467788, "admin@", "Jasmina", "Alimova", 18, "AD34567", "Female")
+child.get_passport()
