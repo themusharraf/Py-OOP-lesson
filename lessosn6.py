@@ -9,7 +9,7 @@ class Notification:
     def notification(self):
         print("Notification yuborishin boshladi...")
         for x in range(6):
-            time.sleep(2)
+            time.sleep(1)
             print(f" {self.message}")
 
     def close_notification(self):
