@@ -13,6 +13,9 @@ class Shaxs:
 obj = Shaxs("Akbar", "Akbarov", 27, "AB123434", "Male")
 
 
-class
-
+class Student(Shaxs):
+    def __init__(self, student_id, student_username, ism, famlily, age, passport, gender):
+        super().__init__(ism, famlily, age, passport, gender)
+        self.student_id = student_id
+        self.student_username = student_username
 
