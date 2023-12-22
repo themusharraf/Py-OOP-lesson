@@ -25,3 +25,5 @@ class Student(Shaxs):
 
 child = Student(4467788, "admin@", "Jasmina", "Alimova", 18, "AD34567", "Female")
 print(child.get_passport())
+
+# class override
