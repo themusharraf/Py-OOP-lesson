@@ -13,7 +13,6 @@ class Student(Person):
         self.username = username
         self.password = password
         self.university = university
-
     @property
     def age(self):
         return 2023 - self.year
