@@ -1,27 +1,3 @@
-"""
-
-class Point:
-name = None
-Point.name
-
-"""
-
-"""
-class Point:
-    name = None
-
-    @classmethod
-    def change_name(cls, newname):
-        Point.name = newname
-
-
-print(Point.name)
-Point.change_name("PDP point")
-print(Point.name)
-
-"""
-
-
 class Person:
     def __init__(self, firstname, lastname, year, address):
         self.firstname = firstname
@@ -38,24 +14,10 @@ class Student(Person):
         self.password = password
         self.university = university
 
-
+    @property
     def age(self):
-        ...
-
+        return 2023 - self.year
 
 
 student = Student("Akbar", "Alimov", 2008, "Tashkent", "007", "@akbar9", "Ass888", "PDP")
 print(student.age)
-
-
-
-
-"""
-class Student():
-
-University name
-student_id
-username
-password
-
-"""
