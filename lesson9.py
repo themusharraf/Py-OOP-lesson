@@ -2,7 +2,7 @@ from uuid import uuid4
 
 
 class Author:
-    def __init__(self, name, age, gender, password, id):
+    def __init__(self, name, age, gender, password, id=None):
         self.id = uuid4()
         self.name = name
         self.__age = age
