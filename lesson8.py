@@ -9,3 +9,4 @@ class Person:
 
 
 objects = Person("Alice", "16", "Tashkent")
+print(objects.get_address())  # getter for the address
