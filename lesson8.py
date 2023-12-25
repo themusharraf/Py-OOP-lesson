@@ -8,10 +8,10 @@ class Person:
         return self.address
 
     def set_address(self, new_address):
-        self.address = new_address # setter
+        self.address = new_address  # setter
 
 
 objects = Person("Alice", "16", "Tashkent")
 print(objects.get_address())  # getter
-objects.set_address("Samarkand") # setter
-print(objects.get_address()) # setter
+objects.set_address("Samarkand")  # setter
+print(objects.get_address())  # setter
