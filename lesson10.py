@@ -1,17 +1,36 @@
-class A:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-    def info(self):
-        return self.name, self.age
+from abc import ABC, abstractmethod
 
 
-class B(A):
-    def __init__(self, name, age):
-        super().__init__(name, age)
-        self.name = name
-        self.age = age
+class Shape(ABC):
+    def __init__(self, shape):
+        self.shape = shape
 
-    def info(self):
-        return self.name, self.age
+    @abstractmethod
+    def draw(self):
+        pass
+
+
+class Circle(Shape):
+    def __init__(self):
+        super().__init__("circle")
+
+    def draw(self):
+        print("Drawing a Circle")
+
+
+class Triangle(Shape):
+
+    def __init__(self):
+        super().__init__("triangle")
+
+    def draw(self):
+        print("Drawing a Triangle")
+
+
+# create a circle object
+circle = Circle()
+circle.draw()
+
+# create a triangle object
+triangle = Triangle()
+triangle.draw()
