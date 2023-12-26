@@ -12,10 +12,6 @@ class Author:
 
 object = Author("Musharraf", 23, "Male", "Alls90")
 
-nums = list(range(1, 31))
-for num in nums:
+num = list(range(0, 31, 2))
 
-    if num % 2 != 0:
-        print(num)
-    else:
-        print("Even")
+print(num)
