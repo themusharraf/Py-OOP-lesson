@@ -15,6 +15,7 @@ class student(Person):
         self.username = username
         self.id = id
 
+
     def info(self):
         return self.username, self.id, self.name, self.age
 
