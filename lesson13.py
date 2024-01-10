@@ -1,4 +1,3 @@
-
 # Encapsulation
 class Shaxs:
     def __init__(self, ism, yosh, idcard):
