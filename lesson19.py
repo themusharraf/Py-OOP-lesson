@@ -11,4 +11,7 @@ class Xodim:
 
 
 obj = Xodim("Alice", 18, 4456)
-print(obj)
+obj1 = Xodim("John", 19, 4459)
+
+# __eq__ and __gt__
+print(obj == obj1)
